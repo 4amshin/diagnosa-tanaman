@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --title-color: #fff;
+    --text-color: hsl(235, 20%, 57%);
+    --shape-gradient: linear-gradient(90deg, hsl(300, 76%, 60%), hsl(57, 81%, 60%));
+    --body-gradient: linear-gradient(180deg, hsl(22, 100%, 84%), hsl(265, 100%, 80%));
+    --container-color: hsl(235, 32%, 10%);
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --normal-font-size: 1.25rem;
+}
+
+
+/*=============== BASE ===============*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +28,14 @@
 body {
     min-height: 100vh;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ================================= HEADER NAVBAR ================================= */
 
 .header {
     background-color: #206B82;
@@ -56,3 +83,39 @@ body {
 .header .brand img {
     width: 25px;
 }
+
+.main .title h1 {
+    position: relative;
+    top: 100px;
+    left: 80px;
+    color: #226A80;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+
+/* ================================= TITLE UNDERLINE ================================= */
+
+.line {
+    width: 500px;
+    height: 225px;
+    position: relative;
+    left: 80px;
+}
+
+.line::after,
+.line::before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 4px;
+    background: #226A80;
+    width: 45%;
+    top: 45%;
+}
+
+
+/* ================================= CARD ================================= */
