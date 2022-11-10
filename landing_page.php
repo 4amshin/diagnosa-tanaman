@@ -35,7 +35,7 @@
                 <p>
                     Website Sistem Pakar diagnosa penyakit pada Tanaman Bawang Merah & Cabai dengan menggunakan metode Forward Chaining.
                 </p>
-                <a href="index.php" class="info-btn">Mulai Diagnosa</a>
+                <a href="list_penyakit.php" class="info-btn">Mulai Diagnosa</a>
             </div>
         </div>
         <div class="media-icons">
