@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --title-color: #fff;
+    --text-color: hsl(234, 15%, 42%);
+    --text-color1: hsl(240, 2%, 17%);
+    --shape-gradient: linear-gradient(90deg, hsl(199, 86%, 41%), hsl(166, 81%, 60%));
+    --body-gradient: linear-gradient(180deg, hsl(22, 100%, 84%), hsl(265, 100%, 80%));
+    --container-color: hsl(235, 32%, 10%);
+    --main-color: #1db2e0;
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --normal-font-size: 1.25rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,47 +50,76 @@ label {
     display: none;
 }
 
-header .logo {
+
+/* ================================= HEADER NAVBAR ================================= */
+
+.header {
+    background-color: var(--container-color);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+.header .menu {
     position: relative;
-    color: #000;
-    font-size: 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header .logo img {
-    height: 50px;
-}
-
-header .navigation a {
-    color: #000;
-    font-size: 18px;
-    text-decoration: none;
+.header .menu a {
+    color: white;
+    font-size: 16px;
     font-weight: 500;
-    letter-spacing: 1px;
-    padding: 2px 15px;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
     border-radius: 20px;
     transition: 0.3s;
-    transition-property: background;
+    transition-property: color, background;
 }
 
-header .navigation a:not(:last-child) {
-    margin-right: 30px;
+.header .menu a:hover {
+    color: var(--container-color);
+    background: white;
 }
 
-header .navigation a:hover {
-    background: #fff;
+.header .brand img {
+    width: 25px;
 }
+
+.main .title h1 {
+    position: relative;
+    /* top: 100px;
+    left: 80px; */
+    /* color: #226A80; */
+    color: var(--container-color);
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+
+/* ================================= MAIN BODY ================================= */
 
 .content {
     max-width: 650px;
     margin: 60px 100px;
+    position: relative;
+    top: 150px;
 }
 
 .content .info h2 {
-    color: #226A80;
+    color: var(--container-color);
     font-size: 55px;
     text-transform: uppercase;
     font-weight: 800;
@@ -82,20 +129,22 @@ header .navigation a:hover {
 }
 
 .content .info h2 span {
-    color: #fff;
+    color: var(--text-color);
     font-size: 50px;
     font-weight: 600;
 }
 
 .content .info p {
+    width: 500px;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 40px;
+    color: var(--text-color1);
 }
 
 .content .info-btn {
     color: #fff;
-    background: #226A80;
+    background: var(--container-color);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -107,8 +156,13 @@ header .navigation a:hover {
 }
 
 .content .info-btn:hover {
-    background: #0C4F60;
+    background: white;
+    border: 2px solid var(--container-color);
+    color: var(--container-color);
 }
+
+
+/* Social Media Icon */
 
 .media-icons {
     display: flex;
@@ -119,9 +173,9 @@ header .navigation a:hover {
 
 .media-icons a {
     position: relative;
-    top: 50px;
-    color: #111;
-    font-size: 25px;
+    top: 130px;
+    color: var(--container-color);
+    font-size: 20px;
     transition: 0.3s;
     transition-property: transform;
 }
