@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Website</title>
     <link href="assets/css/landing_style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Landing Website</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         </a>
         <div class="menu">
             <a href="landing_page.php">Beranda</a>
-            <a href="#">About</a>
+            <a href="list_penyakit.php">Diagnosa</a>
             <a href="#">Info</a>
             <a href="#">Layanan</a>
             <a href="#">Kontak</a>
@@ -25,7 +25,7 @@
     </header>
 
     <!-- ============================= MAIN BODY ============================= -->
-    <section style="background-image: url('assets/img/bg.jpg');">
+    <section style="background-image: url('assets/img/bg_new.jpg')">
         <input type="checkbox" id="check">
 
         <div class="content">

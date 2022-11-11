@@ -17,7 +17,7 @@
         </a>
         <div class="menu">
             <a href="landing_page.php">Beranda</a>
-            <a href="#">About</a>
+            <a href="#main">Diagnosa</a>
             <a href="#">Info</a>
             <a href="#">Layanan</a>
             <a href="#">Kontak</a>
@@ -25,7 +25,7 @@
     </header>
 
     <!-- ============================= MAIN BODY ============================= -->
-    <section class="main">
+    <section id="main" class="main">
         <div class="card">
             <div class="title">
                 <h1>Pilih Jenis Tanaman</h1>

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --title-color: #fff;
+    --text-color: hsl(235, 20%, 57%);
+    --shape-gradient: linear-gradient(90deg, hsl(199, 86%, 41%), hsl(166, 81%, 60%));
+    --body-gradient: linear-gradient(180deg, hsl(22, 100%, 84%), hsl(265, 100%, 80%));
+    --container-color: hsl(235, 32%, 10%);
+    --verified: hsl(145, 100%, 39%);
+    --main-color: #1db2e0;
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --normal-font-size: 1.25rem;
+}
+
+
+/*=============== BASE ===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    /* min-height: 100vh; */
+}
+
+
+/* ================================= HEADER NAVBAR ================================= */
+
+.header {
+    background-color: var(--container-color);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+.header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+.header .menu a:hover {
+    color: var(--container-color);
+    background: white;
+}
+
+.header .logo img {
+    width: 25px;
+}
+
+
+/* ================================= MAIN BODY ================================= */
+
+
+/* Title  */
+
+.title h1 {
+    position: relative;
+    top: 85px;
+    left: 580px;
+    align-items: center;
+    color: var(--container-color);
+}
+
+.title .line {
+    position: relative;
+    top: 85px;
+    left: 590px;
+    width: 75%;
+    border: 2px solid var(--container-color);
+    border-radius: 1px;
+}
+
+.gejala .gejala__title .sub__line {
+    position: relative;
+    top: 120px;
+    left: 43px;
+    width: 25%;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 1px;
+}
+
+
+/* Tile  */
+
+.main {
+    height: 100vh;
+    width: max-content;
+}
+
+.gejala .gejala__title h3 {
+    position: relative;
+    top: 120px;
+    left: 43px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+
+.gejala .gejala__list {
+    position: absolute;
+    /* height: 100vh; */
+    /* width: 100vmin; */
+    /* transform: translate(-50%, -50%); */
+    left: 3%;
+    top: 30%;
+    /* display: inline; */
+    /* justify-content: space-evenly; */
+}
+
+
+/* checkbox-circle2 */
+
+.checkbox-circle2 {
+    padding: 5px 10px;
+}
+
+.checkbox-circle2 input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-circle2 input[type="checkbox"]+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.checkbox-circle2 input[type="checkbox"]:hover+label:hover {
+    color: var(--container-color);
+}
+
+.checkbox-circle2 input[type="checkbox"]:hover+label:before {
+    border: 1px solid var(--container-color);
+    box-shadow: 2px 1px 0 var(--container-color);
+}
+
+.checkbox-circle2 input[type="checkbox"]+label:last-child {
+    margin-bottom: 0;
+}
+
+.checkbox-circle2 input[type="checkbox"]+label:before {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #343a3f;
+    border-radius: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #f3f3f3;
+    box-shadow: -2px -1px 0 var(--container-color);
+}
+
+.checkbox-circle2 input[type="checkbox"]:checked+label:before {
+    border-radius: 1em;
+    border: 2px solid #fff;
+    width: 1em;
+    height: 1em;
+    background: var(--verified);
+    box-shadow: 2px 1px 0 var(--verified);
+}
+
+
+/* checkbox-circle2 end */
