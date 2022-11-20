@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    /*========== Colors ==========*/
+    --title-color: #fff;
+    --text-color: hsl(234, 15%, 42%);
+    --text-color1: hsl(240, 2%, 17%);
+    --shape-gradient: linear-gradient(90deg, hsl(199, 86%, 41%), hsl(166, 81%, 60%));
+    --body-gradient: linear-gradient(180deg, hsl(22, 100%, 84%), hsl(265, 100%, 80%));
+    --container-color: hsl(235, 32%, 10%);
+    --main-color: #1db2e0;
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --normal-font-size: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ================================= HEADER NAVBAR ================================= */
+
+.header {
+    background-color: var(--container-color);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+.header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+.header .menu a:hover {
+    color: var(--container-color);
+    background: white;
+}
+
+.header .brand img {
+    width: 25px;
+}
+
+.main .title h1 {
+    position: relative;
+    /* top: 100px;
+    left: 80px; */
+    /* color: #226A80; */
+    color: var(--container-color);
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabai</title>
+    <link rel="stylesheet" href="assets/css/bawang.css?v=<?php echo time(); ?>">
+</head>
+
+<body>
+
+    <!-- ============================= HEADER ============================= -->
+    <header id="header" class="header">
+        <a href="landing_page.php" class="logo">
+            <img src="assets/img/logow.png">
+        </a>
+        <div class="menu">
+            <a href="landing_page.php">Beranda</a>
+            <a href="list_penyakit.php">Diagnosa</a>
+            <a href="#">Info</a>
+            <a href="#">Layanan</a>
+            <a href="#">Kontak</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="title">
+            <h1>
+                Cabai
+            </h1>
+            <hr class="line">
+        </div>
+
+        <div class="kumpulan_gejala">
+
+            <div class="gejala">
+                <div class="gejala__title">
+                    <h3>Akar</h3>
+                    <hr class="sub__line">
+                </div>
+
+                <div class="gejala__list">
+                    <div class='checkbox-circle2'>
+                        <input type='checkbox' id='1' name='gejala[]'>
+                        <label for='1'>"Gejala1"</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gejala">
+                <div class="gejala__title1">
+                    <h3>Batang</h3>
+                    <hr class="sub__line1">
+                </div>
+
+                <div class="gejala__list1">
+                    <div class="gejala__list">
+                        <div class='checkbox-circle2'>
+                            <input type='checkbox' id='2' name='gejala[]'>
+                            <label for='2'>"Gejala2"</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gejala">
+                <div class="gejala__title2">
+                    <h3>Daun</h3>
+                    <hr class="sub__line2">
+                </div>
+
+                <div class="gejala__list2">
+                    <div class='checkbox-circle2'>
+                        <input type='checkbox' id='3' name='gejala[]'>
+                        <label for='3'>"Gejala3"</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gejala">
+                <div class="gejala__title3">
+                    <h3>Buah/Umbi</h3>
+                    <hr class="sub__line3">
+                </div>
+
+                <div class="gejala__list3">
+                    <div class='checkbox-circle2'>
+                        <input type='checkbox' id='4' name='gejala[]'>
+                        <label for='4'>"Gejala4"</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gejala">
+                <div class="gejala__title4">
+                    <h3>Bunga</h3>
+                    <hr class="sub__line4">
+                </div>
+
+                <div class="gejala__list4">
+                    <div class='checkbox-circle2'>
+                        <input type='checkbox' id='5' name='gejala[]'>
+                        <label for='5'>"Gejala5"</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gejala">
+                <div class="gejala__title5">
+                    <h3>Biji</h3>
+                    <hr class="sub__line5">
+                </div>
+
+                <div class="gejala__list5">
+                    <div class='checkbox-circle2'>
+                        <input type='checkbox' id='6' name='gejala[]'>
+                        <label for='6'>"Gejala6"</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="modal container">
+        <button class="modal__button" id="open-modal">
+                    Cek Penyakit
+                </button>
+
+        <div class="modal__container" id="modal-container">
+            <div class="modal__content">
+                <div class="modal__close close-modal" title="Close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/plant.png" " class="modal__img ">
+
+                    <h1 class="modal__title ">Hasil Diagnosa</h1>
+                    <p class="modal__description ">Penyakit Putih atau Trips</p>
+
+                    <button class="modal__button modal__button-width ">
+                            Rincian
+                        </button>
+
+                    <button class="modal__button-link close-modal ">
+                            Tutup
+                        </button>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>

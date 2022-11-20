@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/button.css">
+
+    <title>Responsive Modal Popup</title>
+</head>
+
+<body>
+    <section class="modal container">
+        <button class="modal__button" id="open-modal">
+                Cek Penyakit
+            </button>
+
+        <div class="modal__container" id="modal-container">
+            <div class="modal__content">
+                <div class="modal__close close-modal" title="Close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/plant.png" " class="modal__img ">
+
+                <h1 class="modal__title ">Hasil Diagnosa</h1>
+                <p class="modal__description ">Penyakit Putih atau Trips</p>
+
+                <button class="modal__button modal__button-width ">
+                        Rincian
+                    </button>
+
+                <button class="modal__button-link close-modal ">
+                        Tutup
+                    </button>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/Js/button.js "></script>
+</body>
+
+</html>

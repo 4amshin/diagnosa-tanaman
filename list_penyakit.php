@@ -32,7 +32,7 @@
             </div>
             <div class="line"></div>
             <div class="card__container">
-                <a href="pages/diagnosa.php">
+                <a href="bawang.php">
                     <article class="card_article card__first">
                         <div class="card__data">
                             <img src="assets/img/onion.png" alt="card image" class="card__img">
@@ -55,7 +55,7 @@
                     </article>
                 </a>
 
-                <a href="pages/diagnosa.php">
+                <a href="cabai.php">
                     <article class="card_article card__second">
                         <div class="card__data">
                             <img src="assets/img/cili.png" alt="card image" class="card__img">

@@ -3,7 +3,7 @@
 /*=============== VARIABLES CSS ===============*/
 
 :root {
-    /*========== Colors ==========*/
+    /*========== Main Body Colors ==========*/
     --title-color: #fff;
     --text-color: hsl(235, 20%, 57%);
     --shape-gradient: linear-gradient(90deg, hsl(199, 86%, 41%), hsl(166, 81%, 60%));
@@ -15,6 +15,18 @@
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2.25rem;
     --normal-font-size: 1.25rem;
+    --b-big-font-size: 1.5rem;
+    --b-normal-font-size: .938rem;
+    /*========== Button Colors ==========*/
+    --b-hue: 240;
+    --b-first-color: hsl(var(--hue), 16%, 18%);
+    --b-first-color-alt: hsl(var(--hue), 16%, 12%);
+    --b-title-color: hsl(var(--hue), 8%, 15%);
+    --b-text-color: hsl(var(--hue), 8%, 35%);
+    --b-body-color: hsl(var(--hue), 100%, 99%);
+    --b-container-color: #FFF;
+    /*========== Button z index ==========*/
+    --z-modal: 1000;
 }
 
 
@@ -29,6 +41,7 @@
 body {
     font-family: var(--body-font);
     color: var(--text-color);
+    /* max-width: 100vh; */
     /* min-height: 100vh; */
 }
 
@@ -86,8 +99,10 @@ body {
 .title h1 {
     position: relative;
     top: 85px;
-    left: 580px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    left: 95px;
     color: var(--container-color);
 }
 
@@ -95,16 +110,66 @@ body {
     position: relative;
     top: 85px;
     left: 590px;
-    width: 75%;
+    width: 10%;
     border: 2px solid var(--container-color);
     border-radius: 1px;
 }
 
-.gejala .gejala__title .sub__line {
+.sub__line {
     position: relative;
     top: 120px;
     left: 43px;
-    width: 25%;
+    width: 13%;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 1px;
+}
+
+.sub__line1 {
+    position: relative;
+    top: 120px;
+    left: 73px;
+    width: 13%;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 1px;
+}
+
+.sub__line2 {
+    position: relative;
+    top: 120px;
+    left: 93px;
+    width: 13%;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 1px;
+}
+
+.sub__line3 {
+    position: relative;
+    top: 235px;
+    left: 43px;
+    width: 30%;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 1px;
+}
+
+.sub__line4 {
+    position: relative;
+    top: 335px;
+    left: 73px;
+    width: 18%;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 1px;
+}
+
+.sub__line5 {
+    position: relative;
+    top: 462px;
+    right: 285px;
+    width: 10%;
     border: 1px solid var(--container-color);
     background-color: var(--container-color);
     border-radius: 1px;
@@ -126,15 +191,94 @@ body {
     color: var(--container-color);
 }
 
+.gejala .gejala__title1 h3 {
+    position: relative;
+    top: 120px;
+    left: 73px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+
+.gejala .gejala__title2 h3 {
+    position: relative;
+    top: 120px;
+    left: 93px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+
+.gejala .gejala__title3 h3 {
+    position: relative;
+    top: 235px;
+    left: 43px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+
+.gejala .gejala__title4 h3 {
+    position: relative;
+    top: 335px;
+    left: 73px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+
+.gejala .gejala__title5 h3 {
+    position: relative;
+    top: 462px;
+    right: 285px;
+    font-weight: 600;
+    color: var(--container-color);
+}
+
 .gejala .gejala__list {
     position: absolute;
     /* height: 100vh; */
     /* width: 100vmin; */
     /* transform: translate(-50%, -50%); */
-    left: 3%;
+    left: 4%;
     top: 30%;
     /* display: inline; */
     /* justify-content: space-evenly; */
+}
+
+.gejala .gejala__list1 {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.gejala .gejala__list2 {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+}
+
+.gejala .gejala__list3 {
+    position: absolute;
+    top: 54%;
+    left: 4%;
+}
+
+.gejala .gejala__list4 {
+    position: absolute;
+    top: 68.5%;
+    left: 35%;
+}
+
+.gejala .gejala__list5 {
+    position: absolute;
+    top: 86%;
+    left: 35%;
+}
+
+.kumpulan_gejala {
+    margin-inline: 1.5rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 328px);
+    row-gap: 2rem;
+    column-gap: 2rem;
 }
 
 
@@ -200,3 +344,15 @@ body {
 
 
 /* checkbox-circle2 end */
+
+
+/* ========================================================================== */
+
+
+/* ========================================================================== */
+
+
+/* ========================================================================== */
+
+
+/* ========================================================================== */
